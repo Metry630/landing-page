@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.h1 {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+img {
+    width: 200px;
+    height: auto;
+}
+.h2{
+    display: flex;
+}
