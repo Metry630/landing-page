@@ -28,9 +28,17 @@ img {
 .c1 {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .img {
     display:flex;
     flex-direction: row;
     align-items: baseline;
+}
+.footer {
+    height: 100px;
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
