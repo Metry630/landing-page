@@ -1,16 +1,21 @@
 body {
     display: flex;
     flex-direction: column;
+    align-content: stretch;
 }
 .header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    padding: 20px 50px;
+    padding: 20px 100px;
+    flex-grow: 4;
+}
+.header, .c1, .c2, .sign {
+    min-height: 250px;
 }
 h1 {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: bold;
     color: #F9FAF8;
 }
 p, li {
@@ -20,6 +25,7 @@ p, li {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
 .h1 {
     display: flex;
@@ -33,24 +39,31 @@ ul {
     gap: 10px;
 }
 img {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
+.mim {width: 250px;
+height: auto;}
 .h2{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    align-items: flex-end;
 }
 .c1 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px 100px;
+    padding: 20px 200px;
+    flex-grow: 4;
 }
 .img {
     display:flex;
     flex-direction: row;
     align-items: baseline;
     gap: 20px;
+    text-align: center;
+    justify-content: space-between;
 }
 .footer {
     height: 100px;
@@ -58,28 +71,46 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
+    color:#E5E7EB;
 }
 .c2{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
     background-color: #E5E7EB;
+    flex-grow: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .i1, .i2, .i3, .i4 {
     display: flex;
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    color: gray;
+}
+.inf {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937
+}
+.src {
+    font-weight: bold;
 }
 .sign {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 4;
 }
 .float {
     width: 600px;
     background-color: #3882F6;
     display: flex;
     justify-content: space-between;
+    padding: 30px 90px 30px;
 }
 .c21 {
     display: flex;
@@ -94,12 +125,27 @@ img {
     font-weight: light;
     color: #1F2937
 }
-button {
+.fi, .sec {
     background-color: #3882F6;
     border-radius: 5px;
-    border-color: #F9FAF8;
+    color:#F9FAF8
+    
 }
+.sec {
+    border-color: #F9FAF8;
+    align-self:center;
+}
+.fi {
+    border-color: transparent
+}
+
 .bo{
     border-radius: 10px;
     border: 5px solid #3882F6;
+}
+.call, .te {
+    color:#E5E7EB
+}
+.call {
+    font-weight: bold;
 }
